@@ -2,5 +2,6 @@
 [x] - Config fonts and styles basics and theme
 [x] - Create base header and sidebar components
 [x] - Create layout 
-[ ] - Define Header Component
-[ ] - Define Sidebar Component
+[ ] - Mount and style sidebar component
+[ ] - Add logic to sidebase component
+[ ] - Mount and style header component
