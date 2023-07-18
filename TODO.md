@@ -4,4 +4,5 @@
 [x] - Create layout 
 [x] - Mount and style sidebar component
 [x] - Add logic to sidebase component
-[ ] - Mount and style header component
+[x] - Mount and style header component
+[ ] - Mount and style Flow component

@@ -1,7 +1,12 @@
+import { Flow } from "../../components";
+import { SCreateDocumentContainer } from "./styles";
 
 
 export function CreateDocument() {
     return (
-        <h1>Create Document Page</h1>
+        <SCreateDocumentContainer>
+            <Flow />
+            
+        </SCreateDocumentContainer>
     )
 }
