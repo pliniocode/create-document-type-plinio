@@ -64,42 +64,46 @@ export const SSidebarContainer = styled.div<SSidebarContainer>`
 
         span {
             position: absolute;
-            left: 13rem;
+            left: 11rem;
+        }
+    }
+`
+
+export const SLiSidebar = styled.li`
+    padding: 0.5rem 0.3rem;
+    list-style: none;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: ${props => props.theme['black_selection']}; 
+    }
+
+    img {
+        color: ${props => props.theme['white']}; 
+    }
+
+    a {
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: ${props => props.theme['white']}; 
+        line-height: 1;
+
+        cursor: pointer;
+
+        span {
+            margin-left: 0.5rem;
         }
     }
 
     li {
-        /* margin-bottom: 0.4rem; */
-        padding: 0.5rem 0.3rem;
         list-style: none;
-        border-radius: 3px;
+        padding-top: 0.5rem;
+    }
 
+    .link-sub-menu {
+        
         &:hover {
-            background-color: ${props => props.theme['black_selection']}; 
-        }
-
-        img {
-            color: ${props => props.theme['white']}; 
-        }
-
-        a {
-            padding-left: 0.5rem;
-            text-decoration: none;
-            color: ${props => props.theme['white']}; 
-            line-height: 1;
-
-            cursor: pointer;
-
-            span {
-                margin-left: 0.5rem;
-            }
-        }
-
-        .link-sub-menu {
-            
-            &:hover {
-                color: ${props => props.theme['orange_epaper']}; 
-            }
+            color: ${props => props.theme['orange_epaper']}; 
         }
     }
 `

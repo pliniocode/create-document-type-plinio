@@ -7,7 +7,7 @@ export function DefaultLayout() {
     return (
         <ContainerLayout>
             <Sidebar />
-            <div>
+            <div className="container-page">
                 <Header />
                 <Outlet />
             </div>

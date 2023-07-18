@@ -12,8 +12,6 @@ function App() {
     <ThemeProvider theme={defaultTheme} >
         <GlobalStyle />
         <BrowserRouter>
-            {/* O correto é termos um componente responsável pelas rotas 
-            Como aqui é para fim de layout, resolvo deixar dessa forma */}
             <Routes>
                 <Route  path='/' element={<DefaultLayout />}>
                     <Route path='/' element={<CreateDocument />} />

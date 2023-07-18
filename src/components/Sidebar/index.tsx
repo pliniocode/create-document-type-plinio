@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SSidebarContainer } from './styles';
+import { SSidebarContainer, SLiSidebar } from './styles';
 import LogoWhite from '../../assets/logo_white.svg'
 import DashboardIcon from '../../assets/icon_material_dashboard.svg'
 import OpenDocumentIcon from '../../assets/icon_open_document.svg'
@@ -15,6 +15,7 @@ export function Sidebar() {
     function handleToggleCollapse()
     {
         setCollapsed(!isCollapsed);
+        setIsSubMenuOpen(false);
     }
 
     function handleToggleSubMenu() 
@@ -37,30 +38,30 @@ export function Sidebar() {
                 <div className="sidebar-top">
                     <nav className="sidebar-menu">
                         <ul >
-                            <li>
+                            <SLiSidebar>
                                 <a href='#'> 
                                     <img src={DashboardIcon} />
                                     {!isCollapsed && <span>Dashboard</span> }
                                 </a>
-                            </li>
-                            <li>
+                            </SLiSidebar>
+                            <SLiSidebar>
                                 <a href='#'> 
                                     <img src={OpenDocumentIcon} />
                                     {!isCollapsed && <span>Documentos</span> }
                                 </a>
-                            </li>
-                            <li>
+                            </SLiSidebar>
+                            <SLiSidebar>
                                 <a href='#'> 
                                     <img src={TasksIcon} />
                                     {!isCollapsed && <span>Tarefas</span> }
                                 </a>
-                            </li>
-                            <li>
+                            </SLiSidebar>
+                            <SLiSidebar>
                                 <a href='#'>
                                     <img src={SearchIcon} /> 
                                     {!isCollapsed && <span>Pesquisar Documento</span> }
                                 </a>
-                            </li>
+                            </SLiSidebar>
                         </ul>
                     </nav>
                 </div>
@@ -68,13 +69,13 @@ export function Sidebar() {
                 <div className="sidebar-bottom">
                     <nav>
                         <ul className="sidebar-menu">
-                            <li>
+                            <SLiSidebar>
                                 <a href='#'>
                                     <img src={UserIcon} /> 
                                     {!isCollapsed && <span>Usuário</span> }
                                 </a>
-                            </li>
-                            <li>
+                            </SLiSidebar>
+                            <SLiSidebar>
                                 <a href='#'>
                                     <img src={ConfigIcon} /> 
                                     {!isCollapsed && <span className='sidebar-span-config'>
@@ -101,7 +102,7 @@ export function Sidebar() {
                                         </li>
                                     </ul>
                                 )}
-                            </li>
+                            </SLiSidebar>
                         </ul>
                     </nav>
                 </div>
