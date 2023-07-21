@@ -10,13 +10,19 @@ export const SModalContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     .modal-content {
-        height: 18rem;
-        width: 27rem;
+        height: 25rem;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 2.6rem 3.6rem;
         color: var(--titulos, #43425D);
         font-weight: 400;
+        text-align: center;
         background-color: #fff;
     
         border-radius: 0.25rem;
