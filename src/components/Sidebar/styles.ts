@@ -1,12 +1,12 @@
 import { styled, css } from 'styled-components'
 
 interface SSidebarContainer {
-    isCollapsed: boolean;
+    collapsed: boolean;
 
 }
 
 export const SSidebarContainer = styled.div<SSidebarContainer>`
-    height: 100vh;
+    height: auto;
     width: 16.25rem;
     padding: 2rem 1rem;
     
@@ -24,7 +24,7 @@ export const SSidebarContainer = styled.div<SSidebarContainer>`
     }
 
     ${(props) =>
-        props.isCollapsed  &&
+        props.collapsed  &&
         css`
             width: 6.5rem;
             text-align: center;

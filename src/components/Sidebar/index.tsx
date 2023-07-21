@@ -24,9 +24,9 @@ export function Sidebar() {
     }
 
     return (
-        <SSidebarContainer isCollapsed={isCollapsed} >
+        <SSidebarContainer collapsed={isCollapsed} >
             <div className="sidebar-header">
-                <img className={`${isCollapsed ? 'img-reduced' : ''}`} src={LogoWhite} />
+                <img className={`${isCollapsed ? 'img-reduced' : '' }`} src={LogoWhite} />
                 <button 
                     className={`toggle-button ${isCollapsed ? 'txt-orange' : ''}`}
                     onClick={handleToggleCollapse}>

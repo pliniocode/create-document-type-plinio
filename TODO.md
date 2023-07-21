@@ -5,4 +5,8 @@
 [x] - Mount and style sidebar component
 [x] - Add logic to sidebase component
 [x] - Mount and style header component
-[ ] - Mount and style Flow component
+[x] - Mount and style Flow component
+[ ] - Mount base structure of the form (abas)
+[ ] - Insert inputs in form 
+[ ] - Add form validation (Youp and Formik)
+[ ] - Add modals

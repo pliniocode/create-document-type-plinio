@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color:  ${(props) => props.theme['chart_gray']};;
+    background-color:  ${(props) => props.theme['chart_gray']};
   }
 
   body, input, textarea, button {
